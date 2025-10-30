@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+   
+   <link rel="stylesheet" href="./04_task.css" />
+   <!--<style>
+        .card-container {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            width: 250px;
+            height: 300px;
+            padding: 20px;
+            box-shadow: 0 0 10px black;
+        }
+    </style> -->
+    
+
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"> </script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"> </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root">
+
+        <!--- All React ELements Sholuld be placed here  -->
+
+    </div>
+
+
+    <script type="text/babel">
+        function createCard(image, name) {
+            return (
+                <div className="card">
+                    <img
+                        src={image}
+                        alt="Indian professional"
+                        width="100%"
+                        height="200"
+                    />
+                    <h3>{name}</h3>
+                </div>
+            );
+        }
+
+        function multipleCards() {
+            return (
+                <div className="card-container">
+                    {createCard("https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg", "Sharma R")}
+                    {createCard("https://img.freepik.com/free-photo/portrait-confident-indian-businesswoman-holding-documents-office_1098-17629.jpg", "Professional")}
+                    {createCard("https://img.freepik.com/free-photo/group-successful-happy-business-people-standing-together-office_1262-20950.jpg", "W prof")}
+                    {createCard("https://img.freepik.com/free-photo/smiling-indian-man-casual-clothes-standing-grey-wall_231208-10889.jpg", "Developer")}
+                    {createCard("https://img.freepik.com/free-photo/it-specialist-working-computer_1098-18705.jpg", "Prof")}
+
+                </div>
+            )
+        }
+        ReactDOM.render(multipleCards(), document.getElementById("root"));
+    </script>
+</body>
+
+</html>

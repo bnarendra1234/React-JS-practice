@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+           <script src="https://unpkg.com/react@18/umd/react.development.js" > </script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"> </script>
+    
+    </head>
+
+    <body>
+     <div id="root">
+
+        <!--- All React ELements Sholuld be placed here  -->
+
+     </div>
+
+
+        <script> 
+        const div= React.createElement("div",null, [
+        React.createElement("h2",null,"H2 inside the dev"),
+        React.createElement("p",null,"Welcome to React js nested elements")]);
+        
+        ReactDOM.render(div,document.getElementById("root"));
+        
+        </script>
+    </body>
+</html>

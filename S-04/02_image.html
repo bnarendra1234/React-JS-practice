@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+           <script src="https://unpkg.com/react@18/umd/react.development.js" > </script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"> </script>
+    
+    </head>
+
+    <body>
+     <div id="root">
+
+        <!--- All React ELements Sholuld be placed here  -->
+
+     </div>
+
+
+        <script> 
+
+          const Image = React.createElement("img", {
+       src: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+
+        width: "400",
+        height: "400",
+        alt: "IBM Logo",
+      });
+           
+         ReactDOM.render(Image,document.getElementById("root"));
+        </script>
+    </body>
+</html>

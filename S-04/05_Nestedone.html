@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+           <script src="https://unpkg.com/react@18/umd/react.development.js" > </script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"> </script>
+    
+    </head>
+
+    <body>
+     <div id="root">
+
+        <!--- All React ELements Sholuld be placed here  -->
+
+     </div>
+
+
+        <script> 
+        const divcontainer =React.createElement("div",null,
+        [
+            React.createElement("section",{
+                style: {
+                    backgroundColor:"Green",
+                    color:"yellow",
+                    padding:"10px",
+                    margin:"10px",
+                },
+            }, 
+            [
+            React.createElement("h2",null,"Heading element in section"),
+            React.createElement("p",null,"paragraph element")
+            ]),
+
+            React.createElement("div",null, 
+            React.createElement("img", {
+            src: "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+            width: "200",
+            height: "200",
+            alt: "IBM Logo",
+          })
+         ),
+        ]);
+       
+        ReactDOM.render(divcontainer,document.getElementById("root"));
+        
+        </script>
+    </body>
+</html>

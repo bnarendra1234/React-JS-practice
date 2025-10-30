@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+           <script src="https://unpkg.com/react@18/umd/react.development.js" > </script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"> </script>
+    
+    </head>
+
+    <body>
+     <div id="container">
+
+        <!--- All React ELements Sholuld be placed here  -->
+
+     </div>
+
+
+        <script> 
+        
+        //h2,p,img
+        
+        const h2=React.createElement("h2",null,"React Js Library");
+        const p =React.createElement("p",null,"React JS is a JAvascript LIbrary"); 
+        const Image =React.createElement("img", {
+            src :"https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
+            width:"400",
+            height:"400",
+            alt:"User Image",
+           
+           });  
+
+           ReactDOM.render([h2 , p , Image],document.getElementById("container"));
+        </script>
+    </body>
+</html>
