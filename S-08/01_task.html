@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+      }
+      #navbar {
+        height: 80px;
+        background-color: black;
+        display: flex;
+      }
+      .brandName {
+        color: white;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .brandName h1 {
+        font-size: 42px;
+      }
+      .menus {
+        width: 60%;
+        display: flex;
+
+        align-items: center;
+      }
+      .menus a {
+        margin-right: 50px;
+        font-size: 17px;
+        color: white;
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+        width: 1250px;
+        margin: 50px auto;
+        justify-content: space-evenly;
+      }
+      .section {
+        text-align: center;
+      }
+
+      button {
+        background-color: red;
+        padding: 13px 30px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        margin-left: 100px;
+      }
+      .brandImage {
+        padding: 50px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .section img {
+        border-radius: 50%;
+        box-shadow: 0 0 10px black;
+        margin-bottom: 10px;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <!--All React Elements Should be Placed here-->
+    </div>
+
+    <script type="text/babel">
+      //100 component
+      //5000 component
+      function Navbar() {
+        return (
+          <div id="navbar">
+            <div className="brandName">
+              <h1>My-Mart</h1>
+            </div>
+            <div className="menus">
+              <a href="">Home</a>
+              <a href="">Products</a>
+              <a href="">Profile</a>
+              <a href="">ContactUs</a>
+              <a href="">Carts</a>
+              <button> Logout </button>
+            </div>
+          </div>
+        );
+      }
+
+      function Section(props) {
+        return (
+          <div className="section">
+            <img src={props.image} alt="" width="65" height="65" />
+            <h4>{props.title}</h4>
+          </div>
+        );
+      }
+
+      function ImageContainer() {
+        return (
+          <div className="brandImage">
+            <img
+              src="https://rukminim2.flixcart.com/www/1060/1560/promos/26/09/2023/6c3c5fe2-c236-4fa2-8d97-595e1e01da01.jpg?q=60"
+              alt=""
+              width="400"
+              height="600"
+            />
+
+            <img
+              src="https://as2.ftcdn.net/v2/jpg/02/04/13/87/1000_F_204138785_etVKFAB5stRO7PnEuI0z83jK4aEsWGg0.jpg"
+              alt=""
+              width="700"
+              height="600"
+            />
+          </div>
+        );
+      }
+
+      function Container() {
+        return (
+          <div>
+            <Navbar />
+            <div className="container">
+              <Section
+                image={
+                  "https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?cs=srgb&dl=pexels-luckysam-47261.jpg&fm=jpg"
+                }
+                title={"Mobiles"}
+              />
+              <Section
+                image={
+                  "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/e730a834ad950bae.png?q=100"
+                }
+                title={"Grocery"}
+              />
+              <Section
+                image={
+                  "https://www.memorandum.com/wp-content/uploads/2018/07/best-paris-work-meeting-restaurants-cafes-clamato-septime-fragments-marais-pink-mama11.jpg"
+                }
+                title={"Fashion"}
+              />
+              <Section
+                image={
+                  "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/3c647c2e0d937dc5.png?q=100"
+                }
+                title={"Flight Booking"}
+              />
+              <Section
+                image={
+                  "https://tse3.mm.bing.net/th/id/OIP.9qj1PBhUnlsdC957_YyULwHaE0?rs=1&pid=ImgDetMain&o=7&rm=3"
+                }
+                title={"Home Furniture"}
+              />
+              <Section
+                image={
+                  "https://wallpapers.com/images/featured/toys-pictures-bn35tkcoayiccgve.jpg"
+                }
+                title={"Toys"}
+              />
+
+              <Section
+                image={
+                  "https://tse3.mm.bing.net/th/id/OIP.V56sd3-5lvhq-SxPkF175gHaLH?rs=1&pid=ImgDetMain&o=7&rm=3"
+                }
+                title={"Mens Clothing"}
+              />
+              <Section
+                image={
+                  "https://img.freepik.com/free-photo/television-houseplants-room-scene-generative-ai_188544-12145.jpg"
+                }
+                title={"Tv's"}
+              />
+              <Section
+                image={
+                  "https://tse4.mm.bing.net/th/id/OIP.kiGAK7uK2a9kCT10WfKlvwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3"
+                }
+                title={"Kid's"}
+              />
+            </div>
+            <ImageContainer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Container />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

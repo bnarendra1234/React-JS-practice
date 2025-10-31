@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <!--All React Elements Should be Placed here-->
+    </div>
+
+    <script type="text/babel">
+
+        function CreateList(params)
+
+        //params = { }
+
+        //We can use the name instead of params to props
+        
+
+        {
+
+            return (
+                <ol>
+                     <li>{params.item1}</li>
+                     <li>{params.item2}</li>
+                     <li>{params.item3}</li>
+                    </ol>
+                );
+
+        }
+
+        function App()
+        {
+            return (
+
+            <div>
+                <CreateList item1={"html"} item2={"css"} item3={"React JS"}/>
+                <CreateList item1={"Java"} item2={"python"} item3={"C++"}/>
+                <CreateList
+              item1={"ReactJS Real Time Project"}
+              item2={"React Native"}
+              item3={"React JS"}
+            ></CreateList>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App/>,document.getElementById("root"));
+    </script>
+  </body>
+</html>

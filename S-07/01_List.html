@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <!--All React Elements Should be Placed here-->
+    </div>
+
+    <script type="text/babel">
+
+        function createList(item1,item2,item3)
+        {
+
+            return (
+                <ol>
+                     <li>{item1}</li>
+                     <li>{item2}</li>
+                     <li>{item3}</li>
+                    </ol>
+                );
+
+        }
+
+        function app()
+        {
+            return (
+
+            <div>
+                {createList("HTML","CSS","React JS")}
+                {createList("Java","Python","AI")}
+                {createList("Spring","AWS","GCP")}
+                </div>
+            );
+        }
+
+        ReactDOM.render(app(),document.getElementById("root"));
+    </script>
+  </body>
+</html>
