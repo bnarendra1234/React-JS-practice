@@ -1,9 +1,22 @@
-import "./NavBar.css";
+import "./Navbar.css";
 
+function Navbar() {
+  return (
+    <div className="navbar">
+      <div id="brandName">
+        <h1>Dude's-Mart</h1>
+      </div>
 
-function NavBar()
-{
-    return <div className="navbar"> </div>
+      <div id="menus">
+        <a href="">Home</a>
+        <a href="">Products</a>
+        <a href="">Profile</a>
+        <a href="">ContactUs</a>
+        <a href="">Cart</a>
+        <button>Logout</button>
+      </div>
+    </div>
+  );
 }
 
-export default NavBar;
+export default Navbar;
