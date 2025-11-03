@@ -1,0 +1,10 @@
+.navbar{
+    height: 80px;
+    background-color: rgb(60, 95, 82);
+    display: grid;
+    grid-template-columns: 40% 50%;
+}
+#brandName
+{
+    background-color: red;
+}
