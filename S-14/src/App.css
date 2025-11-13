@@ -1,0 +1,28 @@
+.a-container {
+  width: 800px;
+  padding: 50px;
+  box-shadow: 0 0 10px black;
+  margin: 50px;
+}
+.b-container {
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 0 10px green;
+  margin: 20px;
+}
+.c-container {
+  width: 500px;
+  padding: 50px;
+  box-shadow: 0 0 10px blue;
+  margin: 20px;
+}
+.d-container {
+  width: 300px;
+  padding: 50px;
+  box-shadow: 0 0 10px red;
+  margin: 20px;
+}
+.d-container p {
+  font-weight: bold;
+  color: red;
+}

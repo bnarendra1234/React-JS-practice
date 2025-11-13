@@ -7,6 +7,7 @@ import Task1 from "./components/state/task1.jsx";
 import Image from "./components/state/Image.jsx";
 import AllCategories from "./components/all-categories/AllCategories.jsx"
 import Counter from "./components/state/Counter.jsx";
+import  A from "./components/props drilling/A.jsx"
 function App() {
   return (
     <div className="app">
@@ -15,8 +16,7 @@ function App() {
       <Image/>
       <Counter/>
       
-      
-      
+
     </div>
   );
 }
