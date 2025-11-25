@@ -1,0 +1,30 @@
+.users-container {
+  padding: 50px;
+}
+.users-container h1 {
+  margin-bottom: 20px;
+}
+
+.user-cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 270px;
+  padding: 13px;
+  box-shadow: 0 0 10px green;
+  text-align: center;
+}
+.card h3 {
+  margin: 15px 0px;
+}
+.card p {
+  margin-bottom: 10px;
+}
+.card button {
+  padding: 7px 15px;
+}

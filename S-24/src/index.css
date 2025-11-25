@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.useRefStyles {
+  padding: 50px;
+  background-color: #91ff00;
+}
+.useRefStyles h1 {
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+.useRefStyles button {
+  margin-right: 20px;
+  padding: 13px 25px;
+  background-color: greenyellow;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.nav-bar {
+  height: 80px;
+  text-align: right;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-bar button {
+  background-color: red;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 50px;
+}

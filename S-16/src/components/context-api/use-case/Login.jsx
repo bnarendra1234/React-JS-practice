@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import { useState, useContext } from "react";
+import loginContext from "./loginContext";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const { setState } = useContext(loginContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -54,6 +57,10 @@ function Login() {
     marginBottom: "20px",
   };
 
+  const login = () => {
+    setState(true);
+  };
+
   return (
     <div style={containerStyle}>
       <form onSubmit={handleSubmit} style={formStyle}>
@@ -74,7 +81,7 @@ function Login() {
           style={inputStyle}
           required
         />
-        <button type="button" style={buttonStyle}>
+        <button type="button" style={buttonStyle} onClick={login}>
           Login
         </button>
       </form>
