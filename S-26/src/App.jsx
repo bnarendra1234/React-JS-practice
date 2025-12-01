@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Ref from "./components/use-ref/Ref.jsx";     
 import DomRef from "./components/use-ref/DomRef.jsx";  
+import UseReducerComp from "./components/use-reducer/UseReducerComp.jsx";
 
 import ProductDetails from "./pages/product-details/Product-Details.jsx";
 
@@ -18,12 +19,14 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-
+      { /* <UseReducerComp/> 
+   
       <Ref />
       <DomRef />
+      */}
 
       {/* Uncomment if you want routing */}
-       { /* <Routes>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/profile" element={<Profile />} />
@@ -31,7 +34,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/productdetails" element={<ProductDetails />} />
       </Routes> 
-      */}
+      
     </div>
   );
 }

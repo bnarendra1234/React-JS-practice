@@ -15,6 +15,16 @@
   text-align: center;
 }
 .useRefStyles button {
+    margin-right: 20px;
+    padding: 13px 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.useReducerStyle button {
   margin-right: 20px;
   padding: 13px 25px;
   background-color: blue;
